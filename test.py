@@ -6,7 +6,7 @@ try:
         port=5432,
         dbname="cbml",
         user="cbml",
-        password="Samiruvidvan@321",
+        password="cbml123",
         sslmode="require"
     )
     print("Connected!")

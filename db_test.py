@@ -15,6 +15,7 @@ def connect_to_pukki():
     )
 
 conn = connect_to_pukki()
+conn.autocommit = True
 
-df = pd.read_sql("SELECT * FROM demo", conn)
+df = pd.read_sql("SELECT * FROM demo_table", conn)
 st.dataframe(df)
