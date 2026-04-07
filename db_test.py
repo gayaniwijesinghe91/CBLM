@@ -14,6 +14,7 @@ def connect_to_pukki():
         sslmode="require"
     )
 
+st.write(st.secrets["db"]["dbname"])
 conn = connect_to_pukki()
 conn.autocommit = True
 
