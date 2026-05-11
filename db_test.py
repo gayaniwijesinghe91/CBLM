@@ -20,3 +20,4 @@ conn.autocommit = True
 
 df = pd.read_sql("SELECT * FROM demo_table", conn)
 st.dataframe(df)
+st.snow()
